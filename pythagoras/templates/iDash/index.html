@@ -19,93 +19,77 @@
 
 <body>
 
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo">{{ logo }}</a>
-            <ul class="right hide-on-med-and-down">
-                <li>
-                    <a href="#">Navbar Link</a>
-                </li>
-            </ul>
-
-            <ul id="nav-mobile" class="sidenav">
-                <li>
-                    <a href="#">Navbar Link</a>
-                </li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
-                <i class="material-icons">menu</i>
-            </a>
-        </div>
-    </nav>
+    <header id="header">
+        <div class="navbar-fixed">
+            <nav class="navbar-color gradient-45deg-blue-cyan">
+                <div class="nav-wrapper">
+                    <div class="left">
+                        <a id="logo-container" href="/iDash/" class="brand-logo">{{ logo }}</a>
+                    </div>
+                    <div class="header-search-wrapper hide-on-med-and-down">
+                        <i class="material-icons">search</i>
+                        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="探索 iDash ">
+                    </div>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#">监控页</a>
+                        </li>
+                        <li>
+                            <a href="#">分析页</a>
+                        </li>
+                        <li>
+                            <a href="#">工作台</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">文章</a>
+                        </li>
+                    </ul>
     
+                    <ul id="nav-mobile" class="sidenav">
+                        <li>
+                            <a href="#">监控页</a>
+                        </li>
+                        <li>
+                            <a href="#">分析页</a>
+                        </li>
+                        <li>
+                            <a href="#">工作台</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">文章</a>
+                        </li>
+                    </ul>
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
             <br>
             <br>
-            <h1 class="header center orange-text">Starter Template</h1>
+            <h1 class="header center blue-text">Starter Template</h1>
             <div class="row center">
                 <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
             </div>
             <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light blue">Get Started</a>
             </div>
             <br>
             <br>
-
         </div>
     </div>
 
-    <div class="container">
-        <div class="section">
-
-            <!--   Icon Section   -->
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text">
-                            <i class="material-icons">flash_on</i>
-                        </h2>
-                        <h5 class="center">Speeds up development</h5>
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom
-                            components. Additionally, we refined animations and transitions to provide a smoother experience
-                            for developers.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text">
-                            <i class="material-icons">group</i>
-                        </h2>
-                        <h5 class="center">User Experience Focused</h5>
-                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that
-                            incorporates components and animations that provide more feedback to users. Additionally, a single
-                            underlying responsive system across all platforms allow for a more unified user experience.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text">
-                            <i class="material-icons">settings</i>
-                        </h2>
-                        <h5 class="center">Easy to work with</h5>
-                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started.
-                            We are also always open to feedback and can answer any questions a user may have about Materialize.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <br>
-        <br>
-    </div>
-
-    <footer class="page-footer orange">
+    <footer class="page-footer purple">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -152,16 +136,32 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Powered by
-                <a class="orange-text text-lighten-3" href="https://djangoproject.com/">Django</a>
-                <span> & </span>               
-                <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                <span>Copyright ©
+                    <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                    </script>
+                    <a class="yellow-text" href="https://github.com/gaiusyao" target="_blank">Gaius-Yao</a> 
+                    All rights reserved.
+                </span>
+                <span class="right hide-on-small-only"> 
+                    Powered by
+                    <a class="yellow-text" href="https://djangoproject.com/">Django</a>
+                     &          
+                    <a class="yellow-text" href="http://materializecss.com">Materialize</a>
+                </span>
             </div>
         </div>
     </footer>
 
     <!-- js -->
+    <script src="{% static 'iDash/js/jquery-3.3.1.min.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
 
 </body>
 

@@ -10,5 +10,7 @@
 
 - [ ] SQLite
 - [ ] admin
-- [ ] pivottables
 - [ ] Simple Dashboard
+- [ ] Workplace
+- [ ] Gallery
+- [ ] Blog
