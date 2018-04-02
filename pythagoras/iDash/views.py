@@ -3,4 +3,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the iDash index.")
+    return render(request, 'iDash/index.html', context={
+                      'title': 'iDash首页', 
+                      'logo': 'iDash'
+                  })
