@@ -2,6 +2,10 @@
  * 0 全局通用
  */
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+}
+
 /* 0.1 Color */
 
 .gradient-45deg-blue-cyan {
@@ -12,7 +16,12 @@
 
 /* 0.2 Header*/
 
-#header .header-search-wrapper {
+.iheader .brand-logo {
+	width: 160px;
+	text-align: center;
+}
+
+.iheader .header-search-wrapper {
 	margin: 8px auto 0 160px;
 	width: calc(100% - 600px);
 	height: 40px;
@@ -27,7 +36,7 @@
 	backface-visibility: hidden;
 }
 
-#header .header-search-wrapper i {
+.iheader .header-search-wrapper i {
 	position: absolute;
 	font-size: 24px;
 	top: 6px;
@@ -37,10 +46,10 @@
 	transition: color 200ms ease;
 }
 
-#header input.header-search-input {
+.iheader input.header-search-input {
 	display: block;
 	padding: 8px 8px 8px 72px;
-	width: 80%;
+	width: 90%;
 	background: rgba(255, 255, 255, 0.3);
 	height: 24px;
 	-webkit-transition: all 200ms ease;
@@ -51,6 +60,133 @@
 	font-weight: 400;
 	outline: none;
 	border-radius: 4px;
+}
+
+.horizontal-nav {
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.04), 0 1px 5px 0 rgba(0, 0, 0, 0.02), 0 3px 1px -2px rgba(0, 0, 0, 0.02);
+  z-index: -1;
+  margin-top: 64px;
+}
+
+.horizontal-nav ul li a i {
+  height: 0px;
+  line-height: 45px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.horizontal-nav ul li a span {
+  position: relative;
+  top: 14px;
+}
+
+.horizontal-nav .dropdown-menu span i {
+  font-size: 14px;
+  position: absolute;
+  top: -12px;
+  right: -14px;
+}
+
+.horizontal-nav-main {
+  margin-top: 64px;
+}
+
+.notification-badge {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  right: 5px;
+  top: -20px;
+  color: #ffffff;
+  background-color: #29b6f6;
+  margin: 0 -.8em;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+#notifications-dropdown li {
+  padding: 8px 16px;
+  font-size: 1rem;
+}
+
+#notifications-dropdown li.divider {
+  padding: 0;
+}
+
+#notifications-dropdown li > a {
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+#notifications-dropdown li > a > span {
+  display: inline-block;
+  font-size: 1.2rem;
+  position: relative;
+  top: 4px;
+  margin-right: 5px;
+}
+
+#notifications-dropdown li > time {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-left: 38px;
+}
+
+.icon-bg-circle {
+  color: #fff;
+  padding: .4rem;
+  border-radius: 50%;
+}
+
+nav .dropdown-content {
+  top: 64px!important;
+}
+
+nav .dropdown-content li {
+  min-height: 40px;
+}
+
+.user-name {
+  font-size: 14px;
+  margin-right: 24px;
+}
+
+.avatar-status {
+  position: relative;
+  display: inline-block;
+  line-height: 50px;
+  width: 28px;
+  white-space: nowrap;
+  border-radius: 1000px;
+  vertical-align: bottom;
+}
+
+.avatar-status img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background: #e6e6e6;
+  border: 0 none;
+  border-radius: 1000px;
+}
+
+.avatar-offline i {
+  display: none;
+}
+
+.avatar-online i {
+  position: absolute;
+  right: -2px;
+  bottom: 18px;
+  width: 9px !important;
+  height: 9px !important;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background-color: #00E676;
 }
 
 /* 0.3 Spacing */
