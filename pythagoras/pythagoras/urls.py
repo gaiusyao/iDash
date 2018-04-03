@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from controlcenter.views import controlcenter
 
 urlpatterns = [
     path('iDash/', include('iDash.urls')),
     path('admin/', admin.site.urls),
+    path('admin/dashboard/', controlcenter.urls),
 ]

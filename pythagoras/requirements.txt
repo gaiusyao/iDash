@@ -1,0 +1,4 @@
+Django==2.0.2
+django-controlcenter==0.2.6
+
+
