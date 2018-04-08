@@ -1,0 +1,28 @@
+{% extends "admin/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    {{ title }} | {{ site_title|default:_('Django site admin') }}
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name">
+        iDash
+    </h1>
+{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/style.css" %}" />
+{% endblock %}
+
+{% block nav-global %}
+    <a href="https://github.com/geex-arts/django-jet" class="sidebar-link icon">
+        <span class="sidebar-link-icon icon-open-external"></span>
+        GitHub
+    </a>
+{% endblock %}
+
+{% block userlinks %}
+    <a href="{% url 'admin:logout' %}">Log Out</a>
+{% endblock %}
