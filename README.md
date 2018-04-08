@@ -14,3 +14,4 @@
 - [ ] Workplace
 - [ ] Gallery
 - [ ] Blog
+- [ ] Material Palette
