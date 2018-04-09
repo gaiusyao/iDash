@@ -7,7 +7,7 @@
 *Version 0*
 
 ### TODO
-- [ ] admin
+- [x] admin
 - [ ] Simple Dashboard
 - [ ] Workplace
 - [ ] Gallery
