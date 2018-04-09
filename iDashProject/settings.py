@@ -161,3 +161,6 @@ JET_THEMES = [
 ]
 
 JET_SIDE_MENU_COMPACT = False
+
+JET_INDEX_DASHBOARD = 'dashboard.CustomIndexDashboard'
+JET_APP_INDEX_DASHBOARD = 'dashboard.CustomAppIndexDashboard'
