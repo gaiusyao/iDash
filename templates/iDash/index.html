@@ -9,10 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
 
     <!-- css -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link rel="stylesheet" href="{% static 'iDash/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'iDash/css/idash.css' %}">
 
+    <!--  -->
     <title>{{ title }}</title>
 
 </head>
@@ -126,7 +125,7 @@
             <nav class="horizontal-nav white grey-text hide-on-med-and-down">
                 <ul class="left">
                     <li class="active">
-                        <a class="dropdown-menu grey-text text-darken-1" data-target="dashboardDropdown">
+                        <a class="dashboard-dropdown dropdown-menu grey-text text-darken-1" data-target="dashboardDropdown">
                             <i class="material-icons">dashboard</i>
                             <span>仪表盘
                                 <i class="material-icons right">keyboard_arrow_down</i>

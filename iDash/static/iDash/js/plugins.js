@@ -41,7 +41,7 @@ $('.notification-btn, .profile-btn').dropdown({
 	stopPropagation: false,
 });
 
-$('.dropdown-menu').dropdown({
+$('.dashboard-dropdown').dropdown({
     inDuration: 300,
     outDuration: 225,
     constrainWidth: false,
@@ -51,7 +51,6 @@ $('.dropdown-menu').dropdown({
     alignment: 'left',
 	stopPropagation: false,
 });
-
 
 // Tooltip
 $('.tooltiped').tooltip({
