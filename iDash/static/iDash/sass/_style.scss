@@ -1,0 +1,220 @@
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+
+/**
+ * 0 全局通用
+ */
+
+body {
+  font-family: $font-stack;
+}
+
+/* 0.1 Materialicons */
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/materialicons-v36.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 0.2 Color */
+
+.gradient-45deg-blue-cyan {
+  background: #1e88e5;
+  background: -webkit-linear-gradient(45deg, #1e88e5 0%, #26c6da 100%);
+  background: linear-gradient(45deg, #1e88e5 0%, #26c6da 100%);
+}
+
+/* 0.3 Header*/
+
+.iheader {
+  .brand-logo {
+    width: 160px;
+    text-align: center;
+  }
+  .header-search-wrapper {
+    margin: 8px auto 0 160px;
+    width: calc(100% - 600px);
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    i {
+      position: absolute;
+      font-size: 24px;
+      top: 6px;
+      left: 24px;
+      line-height: 32px !important;
+      -webkit-transition: color 200ms ease;
+      transition: color 200ms ease;
+    }
+  }
+  input.header-search-input {
+    display: block;
+    padding: 8px 8px 8px 72px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.3);
+    height: 24px;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    border: none;
+    font-size: 16px;
+    appearance: textfield;
+    font-weight: 400;
+    outline: none;
+    border-radius: 4px;
+  }
+}
+
+.horizontal-nav {
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.04), 0 1px 5px 0 rgba(0, 0, 0, 0.02), 0 3px 1px -2px rgba(0, 0, 0, 0.02);
+  z-index: -1;
+  margin-top: 64px;
+  ul {
+    li {
+      a {
+        i {
+          height: 0px;
+          line-height: 45px;
+          font-size: 1.4rem;
+          text-align: center;
+        }
+        span {
+          position: relative;
+          top: 14px;
+        }
+      }
+    }
+  }
+}
+
+.horizontal-nav .dropdown-menu span i {
+  font-size: 14px;
+  position: absolute;
+  top: -12px;
+  right: -14px;
+}
+
+.horizontal-nav-main {
+  margin-top: 64px;
+}
+
+.notification-badge {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  right: 5px;
+  top: -20px;
+  color: #ffffff;
+  background-color: #29b6f6;
+  margin: 0 -.8em;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+#notifications-dropdown {
+  li {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+  li.divider {
+    padding: 0;
+  }
+  li>a {
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  li>a>span {
+    display: inline-block;
+    font-size: 1.2rem;
+    position: relative;
+    top: 4px;
+    margin-right: 5px;
+  }
+  li>time {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-left: 38px;
+  }
+}
+
+.icon-bg-circle {
+  color: #fff;
+  padding: .4rem;
+  border-radius: 50%;
+}
+
+nav .dropdown-content {
+  top: 64px !important;
+  li { min-height: 40px; }
+}
+
+.user-name {
+  font-size: 14px;
+  margin-right: 24px;
+}
+
+.avatar-status {
+  position: relative;
+  display: inline-block;
+  line-height: 50px;
+  width: 28px;
+  white-space: nowrap;
+  border-radius: 1000px;
+  vertical-align: bottom;
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background: #e6e6e6;
+    border: 0 none;
+    border-radius: 1000px;
+  }
+}
+
+.avatar-offline i {
+  display: none;
+}
+
+.avatar-online i {
+  position: absolute;
+  right: -2px;
+  bottom: 18px;
+  width: 9px !important;
+  height: 9px !important;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background-color: #00E676;
+}
+
+/* 0.4 Spacing */
+
+nav ul a {
+  padding: 0 16px;
+}
