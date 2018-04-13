@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-urlpatterns = [
+
+urlpatterns = [    
     path('', include('iDash.urls')),
     path('iDash/', include('iDash.urls')),
     path('jet/', include('jet.urls', 'jet')),  # Django JET URLS

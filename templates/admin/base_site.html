@@ -13,6 +13,8 @@
 
 {% block extrastyle %}
     {{ block.super }}
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{%static "favicon.ico"  %}" />
     <link rel="stylesheet" type="text/css" href="{% static "admin/css/style.css" %}" />
 {% endblock %}
 

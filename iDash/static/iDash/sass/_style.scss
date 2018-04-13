@@ -33,12 +33,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* 0.2 Color */
+/* 0.2 Gradient */
 
 .gradient-45deg-blue-cyan {
   background: #1e88e5;
   background: -webkit-linear-gradient(45deg, #1e88e5 0%, #26c6da 100%);
   background: linear-gradient(45deg, #1e88e5 0%, #26c6da 100%);
+}
+
+.gradient-45deg-indigo-purple {
+  background: #303f9f;
+  background: -webkit-linear-gradient(45deg, #303f9f 0%, #7b1fa2 100%);
+  background: linear-gradient(45deg, #303f9f 0%, #7b1fa2 100%);
 }
 
 /* 0.3 Header*/
