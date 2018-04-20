@@ -7,3 +7,9 @@ def index(request):
         'brand': 'iDash'
     })
 
+def blog(request):
+    return render(request, 'iDash/blog/blog.html', context={
+        'title': '文章',
+        'brand': 'iDash'
+    })
+
